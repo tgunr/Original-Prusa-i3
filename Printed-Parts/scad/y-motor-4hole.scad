@@ -46,18 +46,6 @@ module y_motor_base(){
     }
 }
 }
-   	// new arm V
-//	translate(v = [33,15,0]) #cube(size = [11,30,10]);
-   	// new arm top
-//	translate(v = [44,8,0]) rotate([0,0,90]) cube(size = [11,30,10]);
-   	// new arm bottom
-//	translate(v = [44,39,0]) rotate([0,0,90]) cube(size = [11,30,10]);
-    // top hole outer 
-//    translate(v = [15.5,15.5,0]) #cylinder(h = 10, r=5.5, $fn=50);
-
-//	translate(v = [40,15.5,0]) #cylinder(h = 10, r=5.5, $fn=50);
-    // bottom hole outer 
-
 
      // Front holding part
      translate(v = [0,10,0])cylinder(h = 10, r=8, $fn=80);
@@ -88,7 +76,7 @@ module y_motor_holes(){
 	// BR
 		color("pink") translate(v = [+15.5,+15.5,7]) cylinder(h = 25, r=3.5, $fn=30);
 	// Motor hole
-    	color("yellow") translate([0,0,-1])  cylinder(h = 11.1, r=11, $fn=20); 
+    	color("yellow") translate([0,0,-1])  cylinder(h = 11.1, r=11.5, $fn=20); 
  }
     translate(v = [0,10,-1]) cylinder(h = 12, r=4.2, $fn=50);	
     translate(v = [0,30,-1]) cylinder(h = 12, r=4.2, $fn=50);
